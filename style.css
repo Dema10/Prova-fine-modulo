@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: white;
+    border-bottom: 0.5px solid #9c9c9c;
+    box-shadow: 0 10px 60px #9c9c9c;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+/* Navbar fissa*/
+
+nav {
+    height: 70px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo sx*/
+
+.logo img {
+    width: 150px;
+}
+
+/* Bottoni navbar dx*/
+
+.interactions {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    color: #9c9c9c;
+    margin: 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.bar {
+    border: 1px solid #9c9c9c;
+    width: 170px;
+    height: 30px;
+    margin-right: 5px ;
+    text-align: center;
+    border-radius: 25px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.account {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 70px;
+    display: flex;
+    z-index: 0;
+    width: 100%;
+}
+
+/* Sezione main principale sx*/
+
+.principale {
+    border-right: 1px solid #9c9c9c;
+    width: 60%;
+    padding: 20px 70px 20px 20px;
+    margin-left: 50px;
+    flex-direction: column;
+}
+
+/* Articolo titoli sopra i post */
+
+.topbar {
+    padding: 20px 0;
+    margin-right: 30px;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.topbar span {
+    font-size: 12px;
+}
+
+.topbar span span {
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+/* Articoli post sezione sx*/
+
+.content {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+}
+
+.titlel {
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.titlel h5 {
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interactions2 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9c9c9c;
+    font-size: 12px;
+}
+
+.border {
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    padding: 3px;
+}
+
+.ball {
+    padding: 0 5px;
+}
+
+.image {
+    margin-right: 20px;
+    padding-left: 5px;
+    display: flex;
+}
+
+/* Sezione main destra sidebar */
+
+.sidebar {
+    width: 40%;
+    padding: 20px 90px;
+    flex-direction: column;
+}
+
+/* Articolo collegamento twitter */
+
+.conteiner2 {
+    border-bottom: 1px solid #9c9c9c;
+    padding: 20px 0;
+}
+
+.connect {
+    list-style: none;
+    text-align: center;
+}
+
+.icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.fa-twitter {
+    color: #3aa1f2
+}
+
+.text {
+    margin: 10px 0;
+}
+
+.bar2 {
+    border: 1px solid #9c9c9c;
+    border-radius: 25px;
+    padding: 5px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    margin: 10px 0;
+}
+
+/* Articolo bottoni topic */
+
+.topic {
+    padding: 20px 0;
+}
+
+.topic2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 5px;
+}
+
+.buttontopic {
+    border: 1px solid #9c9c9c;
+    padding: 10px;
+    background-color: #9c9c9c;
+    border-radius: 25px;
+    margin: 10px;
+    opacity: 0.5;
+}
+
+.buttontopic:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Articolo Profili da seguire */
+
+.profiletitle {
+    margin-bottom: 20px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.follow img {
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+}
+
+.profiletext span {
+    padding: 0 10px;
+}
+
+.profiletext p {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #9c9c9c;
+}
+
+.profilebutton {
+    border: 1px solid #9c9c9c;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Articolo salvati di recente */
+
+.recently {
+    margin: 20px 0;
+}
+
+.titlecomments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.titlecomments h5 {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.comments {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.bottomcomments {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 12px;
+    color: #9c9c9c;
+    align-items: center;
+}
+
+.star {
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.see {
+    margin: 20px 0;
+    color: #478b00;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Articolo impostazioni */
+
+.settings {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #9c9c9c;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.settings li {
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.settings li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Footer inventato */
+
+footer {
+    background-color: white;
+    border-top: 0.5px solid #9c9c9c;
+    box-shadow: 0 10px 60px #9c9c9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+footer img {
+    width: 150px;
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: #9c9c9c;
+    font-size: 12px;
+}
